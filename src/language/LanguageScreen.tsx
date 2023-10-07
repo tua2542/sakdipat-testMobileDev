@@ -23,7 +23,7 @@ export function LanguageScreen({navigation}: {navigation: any}): JSX.Element {
                 <ButtonSeparator />
                 <Button
                     text="ไทย"
-                    onPress={() => navigation.navigate('Condition')}
+                    onPress={() => navigation.navigate('OTP')}
                 />
             </View>
         </SafeAreaView>

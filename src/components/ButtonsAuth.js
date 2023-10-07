@@ -5,9 +5,9 @@ import { Text, View, TouchableOpacity, Dimensions } from 'react-native'
 const width = Dimensions.get('window').width
 
 
-export const Button = ({ text, onPress, type = 'filled', bordered = false, size = 'large' }) => {
-  const large = width / 1.2
-  const small = width / 2
+export const ButtonYN = ({ text, onPress, type = 'filled', bordered = false, size = 'large' }) => {
+  const large = width / 1.3
+  const small = width / 2.5
   const btnSize = size === 'large' ? large : small
   const btnBgColor = type === 'filled' ? '#285D34' : 'transparent'
   const btnTextColor = type === 'filled' ? '#ffffff' : '#285D34'
@@ -15,9 +15,12 @@ export const Button = ({ text, onPress, type = 'filled', bordered = false, size 
 
   const containerCommonStyle = {
     backgroundColor: btnBgColor,
-    paddingVertical: 12,
+    paddingVertical: 15,
     width: btnSize,
-    borderRadius: btnBorderRadius
+    marginBottom: 'auto',
+    borderRadius: btnBorderRadius,
+    
+
   }
 
   const textCommonStyle = {
@@ -28,7 +31,7 @@ export const Button = ({ text, onPress, type = 'filled', bordered = false, size 
     fontFamily: 'Quicksand-Medium'
   }
 
-  const border = type === 'outlined' && { borderColor: '#285D34', borderWidth: 2 }
+  const border = type === 'outlined' && { borderColor: '#285D34', borderWidth: 1 }
 
   return (
     <TouchableOpacity onPress={onPress} activeOpacity={0.7}>
