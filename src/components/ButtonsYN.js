@@ -15,8 +15,7 @@ export const ButtonYN = ({ text, onPress, type = 'filled', bordered = false, siz
 
   const containerCommonStyle = {
     backgroundColor: btnBgColor,
-    paddingVertical: 10,
-    paddingHorizontal: 7,
+    paddingVertical: 15,
     width: btnSize,
     marginBottom: 'auto',
     borderRadius: btnBorderRadius,

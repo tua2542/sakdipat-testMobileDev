@@ -22,10 +22,10 @@ export function ConditionScreen(): JSX.Element {
             <ParagraphSeparator />
             <View  style={SecondStyles.fixToText}>
                 <ButtonYN
-                    text="No" size = 'small' type='outlined'  onPress={undefined} />
+                    text="ปฎิเสธ" size = 'small' type='outlined'  onPress={undefined} />
                 <ButtonSeparator />
                 <ButtonYN
-                    text="Yes" size = 'small'  onPress={undefined} />
+                    text="ยอมรับ" size = 'small'  onPress={undefined} />
             </View>
         </SafeAreaView>
 
