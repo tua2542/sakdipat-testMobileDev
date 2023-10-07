@@ -4,7 +4,7 @@
     <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="android:editTextBackground">@drawable/rn_edit_text_material</item>
-        <!-- Color is  -->
+        <!-- Color of splash page is shamrock matte  -->
         <item name="android:windowBackground">#004F30</item>
     </style>
 
