@@ -28,7 +28,7 @@ export const Button = ({ text, onPress, type = 'filled', bordered = false, size 
     fontFamily: 'Quicksand-Medium'
   }
 
-  const border = type === 'outlined' && { borderColor: '#e7e7e7', borderWidth: 2 }
+  const border = type === 'outlined' && { borderColor: '#285D34', borderWidth: 2 }
 
   return (
     <TouchableOpacity onPress={onPress} activeOpacity={0.7}>

@@ -1,24 +1,19 @@
 import React from 'react';
-import {
-    View,
-    SafeAreaView,
-    Text,
-    Alert,
-} from 'react-native';
-import { styles } from './ScreenStyle';
-import { Button } from './Buttons';
-const ButtonSeparator = () => <View style={styles.separator} />;
-const TextSeparator = () => <View style={styles.textSeparator} />;
-const ParagraphSeparator = () => <View style={styles.paragraphSeparator} />;
+import {View,SafeAreaView,Text,Alert} from 'react-native';
+import { FirstStyles } from '../components/ScreenStyle';
+import { Button } from '../components/Buttons';
 
-export function LanguageScreen(): JSX.Element {
+const ButtonSeparator = () => <View style={FirstStyles.separator} />;
+const TextSeparator = () => <View style={FirstStyles.textSeparator} />;
+
+export function LanguageScreen({navigation}: {navigation: any}): JSX.Element {
     return (
 
-        <SafeAreaView style={styles.container}>
+        <SafeAreaView style={FirstStyles.container}>
             <View>
-                <Text style={styles.text}>
+                <Text style={FirstStyles.text}>
                     ยินดีต้อนรับ {"\n"}
-                <Text style={styles.subText} >กรุณาเลือกภาษา</Text>
+                    <Text style={FirstStyles.subText} >กรุณาเลือกภาษา</Text>
                 </Text>
                 <TextSeparator />
                 <Button
@@ -28,7 +23,7 @@ export function LanguageScreen(): JSX.Element {
                 <ButtonSeparator />
                 <Button
                     text="ไทย"
-                    onPress={() => Alert.alert('Simple Button pressed')}
+                    onPress={() => navigation.navigate('Condition')}
                 />
             </View>
         </SafeAreaView>
