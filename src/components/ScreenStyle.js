@@ -63,8 +63,11 @@ export const FirstStyles = StyleSheet.create({
 
     },
       separator: {
-      marginVertical: 10,
+      marginVertical: 50,
       borderBottomColor: '#737373',
+    },
+      paragraphSeparator: {
+      marginBottom: 'auto',
     },
     headTitle:{
       height: 250,

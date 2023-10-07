@@ -18,7 +18,7 @@ export const ButtonYN = ({ text, onPress, type = 'filled', bordered = false, siz
     paddingVertical: 10,
     paddingHorizontal: 7,
     width: btnSize,
-    marginTop: 320,
+    marginBottom: 'auto',
     borderRadius: btnBorderRadius,
     
 
