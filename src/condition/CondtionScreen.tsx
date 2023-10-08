@@ -1,11 +1,6 @@
 import React from 'react';
-import {
-    View,
-    SafeAreaView,
-    Text,
-    Alert,
-} from 'react-native';
-import { SecondStyles } from '../components/ScreenStyle';
+import {View,SafeAreaView,Text} from 'react-native';
+import { SecondStyles } from '../components/screenstyle/CondScreenStyle';
 import { ButtonYN } from '../components/ButtonsYN';
 const ButtonSeparator = () => <View style={SecondStyles.separator} />;
 const ParagraphSeparator = () => <View style={SecondStyles.paragraphSeparator} />;

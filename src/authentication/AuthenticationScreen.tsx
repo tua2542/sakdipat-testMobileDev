@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import { View, SafeAreaView, TextInput } from 'react-native';
-import { FirstStyles, ThirdStyles } from '../components/ScreenStyle';
+import { ThirdStyles } from '../components/screenstyle/AuthScreenStyle';
 import { Button } from '../components/Buttons';
+import { FirstStyles } from '../components/screenstyle/LangScreenStyle';
 
 const ButtonSeparator = () => <View style={ThirdStyles.separator} />;
 const TextSeparator = () => <View style={ThirdStyles.textSeparator} />;
-
-const [toggleCheckBox, setToggleCheckBox] = useState(false)
 
 
 export function AuthenticationScreen({ navigation }: { navigation: any }): JSX.Element {

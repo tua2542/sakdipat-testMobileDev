@@ -1,6 +1,6 @@
 import React from 'react';
 import {View,SafeAreaView,Text,Alert} from 'react-native';
-import { FirstStyles } from '../components/ScreenStyle';
+import { FirstStyles } from '../components/screenstyle/LangScreenStyle';
 import { Button } from '../components/Buttons';
 
 const ButtonSeparator = () => <View style={FirstStyles.separator} />;
@@ -23,7 +23,7 @@ export function LanguageScreen({navigation}: {navigation: any}): JSX.Element {
                 <ButtonSeparator />
                 <Button
                     text="ไทย"
-                    onPress={() => navigation.navigate('OTP')}
+                    onPress={() => navigation.navigate('FPW')}
                 />
             </View>
         </SafeAreaView>

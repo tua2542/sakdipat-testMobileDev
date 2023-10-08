@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, SafeAreaView, TextInput, Text } from 'react-native';
-import { FirstStyles, ForthStyles, } from '../components/ScreenStyle';
-import { Button } from '../components/ButtonsOTP';
+import { ForthStyles, } from '../components/screenstyle/OTPScreenStyle';
+import { Button } from '../components/Buttons';
 
 const ButtonSeparator = () => <View style={ForthStyles.separator} />;
 const TextSeparator = () => <View style={ForthStyles.textSeparator} />;
@@ -12,7 +12,7 @@ const TextSeparator = () => <View style={ForthStyles.textSeparator} />;
 export function OTPScreen({ navigation }: { navigation: any }): JSX.Element {
     return (
 
-        <SafeAreaView style={FirstStyles.container}>
+        <SafeAreaView style={ForthStyles.container}>
             <View>
             <Text style={ForthStyles.textEmoji}>☎️</Text>
             <Text style={ForthStyles.text}>OTP จะถูกส่งไปที่เบอร์โทรศัพท์</Text>
