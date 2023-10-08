@@ -27,7 +27,7 @@ export function DialPadFP({onPress}: {onPress: (item: typeof dialPad[number]) =>
         <SafeAreaView style={
           {
             flex: 1,
-            margin: 8,
+            margin: 12,
             justifyContent: 'center',
             alignItems: 'center',
             width: dialPadSize,
