@@ -11,6 +11,7 @@ import { VerifyScreen } from './src/verify/VerifyScreen';
 import { PinCodeScreen } from './src/pincode/PinCodeScreen';
 import { PinCodeScreenConfirm } from './src/pincode/PinCodeScreenComfirm';
 import { FPWScreen } from './src/forgotpassword/FPWScreen';
+import { FPWScreenS } from './src/forgotpassword/FPWScreenS';
 
 const Stack = createNativeStackNavigator();
 
@@ -29,6 +30,7 @@ function App(): JSX.Element {
                 <Stack.Screen name="Pincode" component={PinCodeScreen} />
                 <Stack.Screen name="PincodeConfirm" component={PinCodeScreenConfirm} />
                 <Stack.Screen name="FPW" component={FPWScreen} />
+                <Stack.Screen name="FPWS" component={FPWScreenS} />
 
 
             </Stack.Navigator>

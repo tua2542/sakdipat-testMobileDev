@@ -21,6 +21,25 @@ import { StyleSheet } from 'react-native';
         color: 'black',
         fontWeight: 'normal',
       },
+      textTwo: {
+        textAlign: 'center',
+        fontSize: 22,
+        fontFamily: 'Quicksand-Medium',
+        color: 'black',
+        fontWeight: 'bold',
+      },
+      subTextTwo: {
+        textAlign: 'center',
+        fontSize: 16,
+        color: 'black',
+        fontWeight: 'normal',
+      },
+      subTextEmoji:{
+        textAlign: 'center',
+        fontSize: 96,
+        color: '#285D34',
+        fontWeight: 'normal',
+      },
       separator: {
         marginVertical: 36,
         borderBottomColor: '#737373',
