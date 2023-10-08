@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { View, SafeAreaView, Text, Dimensions, TouchableHighlight } from 'react-native';
 import { DialPad, SixthStyles } from '../components/screenstyle/PinScreenStyle';
 import { StatusBar } from 'react-native';
+import { DialPadFP } from '../components/screenstyle/PinFPStyle';
 
 const { width } = Dimensions.get('window');
 const pinLength = 6;
@@ -11,10 +12,10 @@ const pinSpacing = 10;
 const pinSize = pinMaxSize - pinSpacing * 1.5;
 const TextSeparator = () => <View style={SixthStyles.textSeparator} />;
 
-export function PinCodeScreen({ navigation }: { navigation: any }): JSX.Element {
+export function PinFPScreen({ navigation }: { navigation: any }): JSX.Element {
     const [code, setCode] = useState<number[]>([]);
     if (code.length === pinLength) {
-        { navigation.push('PincodeConfirm', { screen: "PinCodeScreenConfirm" }) }
+        { navigation.push() }
     }
     return (
 
@@ -22,7 +23,7 @@ export function PinCodeScreen({ navigation }: { navigation: any }): JSX.Element 
             <View>
                 <TextSeparator />
                 <Text style={SixthStyles.textTwo}>
-                    ตั้งรหัส PIN CODE
+                    กรุณากรอกรหัส PIN CODE
                 </Text>
             </View>
             <TextSeparator />
@@ -50,7 +51,7 @@ export function PinCodeScreen({ navigation }: { navigation: any }): JSX.Element 
                 })}
             </View>
             <View style={SixthStyles.container}>
-                <DialPad onPress={(item) => {
+                <DialPadFP onPress={(item) => {
                     if (item === 'del') {
                         setCode(prevCode => prevCode.slice(0, prevCode.length - 1));
                     } else if (typeof item === 'number') {
@@ -58,7 +59,11 @@ export function PinCodeScreen({ navigation }: { navigation: any }): JSX.Element 
                         setCode(prevCode => [...prevCode, item]);
                     }
                 }} />
+                <TextSeparator />
                 <StatusBar />
+                <Text style={SixthStyles.textThree}>
+                    ลืมรหัส PIN ?
+                </Text>
             </View>
         </SafeAreaView>
 

@@ -19,7 +19,7 @@ export function VerifyScreen({ navigation }: { navigation: any }): JSX.Element {
                 <TextSeparator />
                 <View style={FifthStyles.OTPInputsize}>
                 <OTPInputView
-                    pinCount={6}
+                    pinCount={5}
                     autoFocusOnLoad
                     codeInputFieldStyle={FifthStyles.underlineStyleBase}
                     codeInputHighlightStyle={FifthStyles.underlineStyleHighLighted}

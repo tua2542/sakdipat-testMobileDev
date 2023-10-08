@@ -4,17 +4,17 @@ import { DialPad, SixthStyles } from '../components/screenstyle/PinScreenStyle';
 import { StatusBar } from 'react-native';
 
 const { width } = Dimensions.get('window');
-const pinLength = 4;
+const pinLength = 6;
 const pinContainerSize = width / 2;
 const pinMaxSize = pinContainerSize / pinLength;
 const pinSpacing = 10;
-const pinSize = pinMaxSize - pinSpacing * 2;
+const pinSize = pinMaxSize - pinSpacing * 1.5;
 const TextSeparator = () => <View style={SixthStyles.textSeparator} />;
 
 export function PinCodeScreenConfirm({ navigation }: { navigation: any }): JSX.Element {
     const [code, setCode] = useState<number[]>([]);
     if(code.length === pinLength ){
-        {navigation.push()}
+        {navigation.push('FingerprintT', {screen:"FPScreen"})}
     }
     return (
 
@@ -29,14 +29,23 @@ export function PinCodeScreenConfirm({ navigation }: { navigation: any }): JSX.E
             <View style={SixthStyles.pinDirection}>
                 {[...Array(pinLength).keys()].map(i => {
                     const isSelected = !!code[i]
-                    return <View
+                    if (isSelected) {
+                        return <View
+                            style={{
+                                width: pinSize,
+                                height: pinSize,
+                                borderRadius: pinSize,
+                                borderWidth: 2,
+                                borderColor: 'gray',
+                                backgroundColor: '#285D34'
+                            }} />
+                    } else return <View
                         style={{
                             width: pinSize,
-                            height: isSelected ? pinSize : 2,
+                            height: pinSize,
                             borderRadius: pinSize,
                             borderWidth: 2,
                             borderColor: 'gray',
-                            backgroundColor: '#285D34'
                         }} />
                 })}
             </View>
