@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, SafeAreaView, TextInput, Text } from 'react-native';
+import { View, SafeAreaView, TextInput, Text, Alert } from 'react-native';
 import { SeventhStyles, } from '../components/screenstyle/FPWScreenStyle';
 import { Button } from '../components/Buttons';
 
@@ -25,7 +25,7 @@ export function FPWScreenS({ navigation }: { navigation: any }): JSX.Element {
                 <TextSeparator />
                 <Button
                     text="ตกลง"
-                    onPress={() => navigation.navigate(undefined)}
+                    onPress={() =>Alert.alert('Done !!')}
                 />
             </View>
         </SafeAreaView>
