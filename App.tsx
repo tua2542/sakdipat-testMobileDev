@@ -19,7 +19,7 @@ function App(): JSX.Element {
 
     return (
         <NavigationContainer>
-            <Stack.Navigator>
+            <Stack.Navigator initialRouteName='Language'>
                 <Stack.Screen options={{ headerShown: false }} name="Language" component={LanguageScreen} />
                 <Stack.Screen options={{
                     headerTitle: (props) => <View style={SecondStyles.headTitle} />,

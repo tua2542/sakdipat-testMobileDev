@@ -20,7 +20,8 @@ export function ConditionScreen({navigation}: {navigation: any}): JSX.Element {
                     text="ปฎิเสธ" size = 'small' type='outlined'  onPress={undefined} />
                 <ButtonSeparator />
                 <ButtonYN
-                    text="ยอมรับ" size = 'small'  onPress={navigation.navigate('Condition')} />
+                    text="ยอมรับ" size = 'small' 
+                    onPress={() => navigation.push('Authentication', {screen:"AuthenticationScreen"})} />
             </View>
         </SafeAreaView>
 

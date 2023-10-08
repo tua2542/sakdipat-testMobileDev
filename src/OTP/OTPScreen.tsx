@@ -20,7 +20,7 @@ export function OTPScreen({ navigation }: { navigation: any }): JSX.Element {
             <ButtonSeparator />
                 <Button
                     text="ขอรหัส OTP"
-                    onPress={() => undefined}
+                    onPress={() => navigation.push('Verify', {screen:"VerifyScreen"})}
                 />
             <TextSeparator />
             <Text style={ForthStyles.subText}> กรณีเบอร์โทรศัพท์ถูกต้องติดต่อเบอร์ 02-XXX-XXXX</Text>

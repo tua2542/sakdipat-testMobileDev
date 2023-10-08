@@ -23,9 +23,7 @@ export function VerifyScreen({ navigation }: { navigation: any }): JSX.Element {
                     autoFocusOnLoad
                     codeInputFieldStyle={FifthStyles.underlineStyleBase}
                     codeInputHighlightStyle={FifthStyles.underlineStyleHighLighted}
-                    onCodeFilled = {(code => {
-                        console.log(`Code is ${code}, you are good to go!`)
-                    })}
+                    onCodeFilled = {(code => {navigation.push('Pincode', {screen:"PinCodeScreen"})})}
                 />
                 </View>
                 <TextSeparator />
