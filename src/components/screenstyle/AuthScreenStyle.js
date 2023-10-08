@@ -29,4 +29,8 @@ import { StyleSheet } from 'react-native';
     textSeparator: {
       marginVertical: 12,
     },
+    separatorBetween: {
+      flexDirection: 'column',
+      justifyContent: 'space-between',
+    },
   });
