@@ -41,6 +41,7 @@ import { StyleSheet } from 'react-native';
       borderTopLeftRadius: 35,
       borderTopRightRadius: 35,
 
-    }
+    },
+
 
   });

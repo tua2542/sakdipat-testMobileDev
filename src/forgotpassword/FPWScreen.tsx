@@ -24,7 +24,7 @@ export function FPWScreen({ navigation }: { navigation: any }): JSX.Element {
                 <TextSeparator />
                 <Button
                     text="ส่ง"
-                    onPress={() => navigation.navigate(undefined)}
+                    onPress={() => navigation.push('FPWS', { screen: "FPWScreenS" })}
                 />
             </View>
         </SafeAreaView>

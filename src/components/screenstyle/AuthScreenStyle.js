@@ -8,8 +8,13 @@ import { StyleSheet } from 'react-native';
       marginHorizontal: 18,
       alignItems: 'center' ,
     },
+    subContainer:{
+      flexDirection: 'row',
+      justifyContent:'space-between',
+      alignItems: 'center',
+    },
     text: {
-      textAlign: 'left',
+      textAlign: 'center',
       fontSize: 22,
       fontFamily: 'Quicksand-Medium',
       color: 'black',
@@ -17,20 +22,24 @@ import { StyleSheet } from 'react-native';
       marginVertical: 12,
     },
     subText: {
-      textAlign: 'left',
-      fontSize: 16,
-      color: 'black',
+      textAlign: 'center',
+      fontSize: 14,
+      color: 'gray',
       fontWeight: 'normal',
     },
     separator: {
-      marginVertical: 36,
+      marginVertical: 28,
       borderBottomColor: '#737373',
     },
     textSeparator: {
       marginVertical: 12,
     },
     separatorBetween: {
-      flexDirection: 'column',
-      justifyContent: 'space-between',
+      flex:1,
+      flexDirection: 'row',
+      justifyContent: 'space-between'
+    },
+    FPWText: {
+      fontSize: 14,
     },
   });
